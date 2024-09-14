@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 8px;
+            margin: 5px;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+        }
+
+        .navbar {
+            max-width: 30vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* gap: ; */
+            background-color: aqua;
+            padding: 8px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .dot {
+            width: 60px;
+            height: 150px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .row {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+        }
+
+        ul {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">text</a>
+        <a href="#">text</a>
+        <a href="#">text</a>
+    </div>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box" id="wtf">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <div class="dot">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+    <ul class="kit">
+        <li>this is a list</li>
+        <li>this is a list</li>
+        <li>this is a list</li>
+        <li>this is a list</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+
+</html>

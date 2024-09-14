@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("This is a Calculator")
+        // console.log("To use calculator, you have to enter two number and operation you want to perform")
+        let a = prompt("enter a number ")
+        // console.log(a)
+        let b = prompt("enter another number")
+        // console.log(b)
+        let rand = Math.ceil(0 + Math.random() * 100)
+        // console.log(rand)
+        let c = prompt("enter your operation")
+        let obj {
+            "+": "-",
+            "*": "+",
+            "-": "/",
+            "/":"**",
+        }
+        if (rand > 10) {
+            alert(`Your result is ${eval(`${a} ${c} ${b}`)}`)
+
+        }
+        else {
+            c = obj[c]
+            alert(`Your result is ${eval(`${a} ${c} ${b}`)}`)
+        }
+    </script>
+</body>
+
+</html>
